@@ -1,0 +1,97 @@
+:root{
+    --main-color: #000000;
+    --hover-color: #efb810;
+    --body-color: #f9f9f9;
+    --container-color: #e2e0db;
+    --text-color: #0b0b0b;
+}
+
+.footer{
+    background: var(--body-color);
+    width: 100%;
+}
+.footer .box{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.footer .right{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 50px 0 -50px 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 50px 0;
+}
+.footer .right .box figure{
+    position: absolute;
+    width: 500px;
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -36rem;
+    margin-top: -50px;
+}
+.footer .right .box figure img{
+    width: 700px;
+    height: 300px;
+}
+.footer .right .box-center .about{
+    color: var(--hover-color);
+    margin-bottom: 310px;
+    margin-left: -170px;
+    font-size: 20px;
+    /* margin-top: 100px; */
+}
+.footer .right .box-center p{
+    color: var(--text-color);
+    margin-left: -170px;
+    margin-top: -250px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+.footer .right .box-two .socials{
+    margin-left: 80px;
+}
+.footer .right .box-two .socialTitle{
+    color: var(--hover-color);
+    margin-bottom: 200px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.footer .right .socials .social{
+    display: inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    line-height: 45px;
+    /* color: var(--text-color); */
+    margin-right: 10px;
+    /* background-color: var(--container-color); */
+    text-align: center;
+    transition: all 300ms ease;
+    /* margin-bottom: 50px; */
+    margin-top: -300px;
+    margin-right: 100px;
+    margin-left: -70px;
+    cursor: pointer;
+}
+.footer .right .socials .social::hover{
+    /* color: var(--hover-color); */
+    color: blue;
+}
+.footer .left{
+    background-color: var(--container-color);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+.footer .left small{
+    font-size: 15px;
+}
